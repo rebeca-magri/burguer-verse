@@ -37,3 +37,47 @@
   --transition-normal: 0.3s ease;
 }
 
+/* 2. RESET ESTRUTURAL */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+
+/* imagens responsivas sem ultrapassar o conteiner */
+img, picture {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Herança de tipografia para entradas de texto e botões */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remoção de formatação padrão */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol{
+    list-style: none;
+}
