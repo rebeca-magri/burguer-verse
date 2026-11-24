@@ -1,3 +1,6 @@
+/* Importação das fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700;800;900&display=swap');
+
 /* 1. VARIÁVEIS GLOBAIS (Declaração dos tokens de design em primeiro lugar) */
 :root {
   /* Cores Principais Fast-Food */
@@ -37,31 +40,34 @@
   --transition-normal: 0.3s ease;
 }
 
-/* 2. RESET ESTRUTURAL */
+/* 2. RESET STRUCTURAL (Zeramento padrão de estilo dos navegadores) */
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Define a base do rem para 10px (62.5% de 16px) */
 html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
+/* Reset puramente estrutural do body */
 body {
-    min-height: 100vh;
-    line-height: 1.5;
-    text-rendering: optimizeSpeed;
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
 }
 
-/* imagens responsivas sem ultrapassar o conteiner */
-img, picture {
-    max-width: 100%;
-    display: block;
-    height: auto;
+/* Imagens responsivas sem ultrapassar o container */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 /* Herança de tipografia para entradas de texto e botões */
@@ -69,15 +75,15 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 /* Remoção de formatação padrão */
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-ul, ol{
-    list-style: none;
+ul, ol {
+  list-style: none;
 }
